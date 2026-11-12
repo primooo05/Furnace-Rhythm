@@ -2,9 +2,10 @@
   "name": "FurnaceRhythm.Runtime",
   "rootNamespace": "FurnaceRhythm",
   "references": [
-    "Unity.InputSystem",
-    "Unity.TextMeshPro",
-    "UnityEngine.UI"
+    "FurnaceRhythm.Behaviors",
+    "FurnaceRhythm.Config",
+    "FurnaceRhythm.Domain",
+    "FurnaceRhythm.Presentation"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

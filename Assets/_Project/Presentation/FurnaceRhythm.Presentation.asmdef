@@ -1,0 +1,19 @@
+{
+  "name": "FurnaceRhythm.Presentation",
+  "rootNamespace": "FurnaceRhythm.Presentation",
+  "references": [
+    "FurnaceRhythm.Config",
+    "FurnaceRhythm.Events",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

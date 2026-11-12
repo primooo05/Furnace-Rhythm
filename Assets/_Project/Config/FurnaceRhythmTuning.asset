@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3ffa2531074b51950d4422122550a9, type: 3}
+  m_Name: FurnaceRhythmTuning
+  m_EditorClassIdentifier: FurnaceRhythm.Config::FurnaceRhythm.Config.FurnaceRhythmTuning
+  beatDurationSeconds: 1.7
+  targetCenter: 0.68
+  perfectWindow: 0.045
+  goodWindow: 0.12
+  judgmentHoldSeconds: 0.5
+  orderResultHoldSeconds: 1.1
+  hotBilletSprite: {fileID: 21300000, guid: 0c21f4a51eac53b4cb705e90f2dfe235, type: 3}

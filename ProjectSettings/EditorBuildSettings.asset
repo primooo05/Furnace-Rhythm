@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Project/Scenes/FurnaceRhythmDay1.unity
+    guid: 1bd49aee933b5c14da09ca223d524ff7
+  - enabled: 1
     path: Assets/FurnaceRhythm/Scenes/FurnaceRhythmDay1.unity
     guid: 8dfbf20c213c1b6408eca283f04912fe
   - enabled: 1

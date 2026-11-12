@@ -1,0 +1,21 @@
+{
+  "name": "FurnaceRhythm.Tests",
+  "rootNamespace": "FurnaceRhythm.Tests",
+  "references": [
+    "FurnaceRhythm.Domain"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

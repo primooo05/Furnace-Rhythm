@@ -2,6 +2,8 @@
   "name": "FurnaceRhythm.Editor",
   "rootNamespace": "FurnaceRhythm.EditorTools",
   "references": [
+    "FurnaceRhythm.Config",
+    "FurnaceRhythm.Presentation",
     "FurnaceRhythm.Runtime"
   ],
   "includePlatforms": [

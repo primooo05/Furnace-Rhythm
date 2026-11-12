@@ -31,7 +31,7 @@ The 2D illustrations keep the established industrial palette and industrial mate
 
 ### First sample asset
 
-The hot billet on anvil is the first visual direction for the central gameplay object. It is a transparent PNG concept, not yet wired into a Unity scene.
+The hot billet on anvil is the visual direction for the central gameplay object. The Day 1 scene builder assigns it to the presentation layer, moves the art into the standard project art folder, and applies the folder's sprite preset.
 
 ![Hot billet on anvil concept](Assets/FurnaceRhythm/Art/FurnaceRhythm_HotBillet_Concept.png)
 
@@ -39,5 +39,6 @@ The hot billet on anvil is the first visual direction for the central gameplay o
 
 - [Three-day implementation plan](Docs/Implementation-Plan.md)
 - [Hot billet sample asset](Assets/FurnaceRhythm/Art/FurnaceRhythm_HotBillet_Concept.png)
+- Domain Edit Mode tests are in `Assets/_Project/Tests/` and cover timing input, scoring bounds, and shift restart behavior.
 
-The old factory prototype scripts and screenshots have been removed. The runtime now supports the full five-order shift: fifteen beats, Perfect/Good/Miss scoring, a streak with capped combo bonus, per-workpiece quality, and a final shift result. Use **Furnace Rhythm → Build Day 1 Scene** in Unity to generate the scene, then press Play; the builder places it first in Build Settings.
+Gameplay rules now live in the Unity independent `FurnaceShift` domain service. `FurnaceRhythmController` forwards input and frame time, `FurnaceRhythmEventBus` carries snapshots to `FurnaceRhythmPresenter`, and `FurnaceRhythmGame` wires those components for the scene. Timing and hold values are stored in a `FurnaceRhythmTuning` ScriptableObject. The five-order shift retains its fifteen beats, Perfect/Good/Miss scoring, capped combo bonus, per-workpiece quality, and final result. Use **Furnace Rhythm → Build Day 1 Scene** in Unity to migrate the art, create or reuse the tuning asset, and save the scene under `Assets/_Project/Scenes`; the builder places it first in Build Settings.
