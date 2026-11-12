@@ -1,6 +1,6 @@
 # Furnace Rhythm Architecture
 
-This document maps the project as it exists today and explains how its folders follow the conventions in [`RULES.md`](RULES.md). `RULES.md` is the source of truth for conventions; this file describes where the current implementation lives. Update both when the architecture changes.
+This document maps the project as it exists today and explains how its folders follow the conventions in [`RULES.md`](RULES.md). `RULES.md` is the source of truth for conventions; this file describes where the current implementation lives. For editor versions and first-run instructions, see [`SETUP.md`](SETUP.md). Update these documents when project conventions, architecture, or setup change.
 
 ## At a glance
 

@@ -33,12 +33,15 @@ The 2D illustrations keep the established industrial palette and industrial mate
 
 The hot billet on anvil is the visual direction for the central gameplay object. The Day 1 scene builder assigns it to the presentation layer, moves the art into the standard project art folder, and applies the folder's sprite preset.
 
-![Hot billet on anvil concept](Assets/FurnaceRhythm/Art/FurnaceRhythm_HotBillet_Concept.png)
+![Hot billet on anvil concept](Assets/_Project/Art/hot_billet_anvil_concept.png)
 
 ## Project files
 
+- [Setup and tool versions](SETUP.md)
+- [Project architecture and folder map](ARCHITECTURE.md)
+- [Project conventions](RULES.md)
 - [Three-day implementation plan](Docs/Implementation-Plan.md)
-- [Hot billet sample asset](Assets/FurnaceRhythm/Art/FurnaceRhythm_HotBillet_Concept.png)
+- [Hot billet sample asset](Assets/_Project/Art/hot_billet_anvil_concept.png)
 - Domain Edit Mode tests are in `Assets/_Project/Tests/` and cover timing input, scoring bounds, and shift restart behavior.
 
 Gameplay rules now live in the Unity independent `FurnaceShift` domain service. `FurnaceRhythmController` forwards input and frame time, `FurnaceRhythmEventBus` carries snapshots to `FurnaceRhythmPresenter`, and `FurnaceRhythmGame` wires those components for the scene. Timing and hold values are stored in a `FurnaceRhythmTuning` ScriptableObject. The five-order shift retains its fifteen beats, Perfect/Good/Miss scoring, capped combo bonus, per-workpiece quality, and final result. Use **Furnace Rhythm → Build Day 1 Scene** in Unity to migrate the art, create or reuse the tuning asset, and save the scene under `Assets/_Project/Scenes`; the builder places it first in Build Settings.
